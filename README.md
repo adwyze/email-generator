@@ -2,11 +2,11 @@
 
 ### What and why?
 
-This repository contains the generator for HTML templates. The generator uses Inky(by Foundation) for templating language that converts simple HTML tags into the complex table HTML required for emails.
+This repository contains the generator for HTML templates. The generator uses Inky(by Foundation) as templating language that converts simple HTML tags into the complex table HTML required for emails.
 
 A few basic components(Buttons, Greetings, etc) required are already written in the [index.html](./src/pages/index.html)
 
-For creating a new template, say `Invitation.html`, just add a HTML page at `./src/pages/` and on running the build, the template will be generated at `./dist/`
+For creating a new template, say `Invitation.html`, just add a HTML page named `Invitation.html` at `./src/pages/` and on running the build, the template will be generated at `./dist/Invitation.html`
 
 ### Setup
 
@@ -23,7 +23,7 @@ For generating the production-ready templates, run
 
 ### Writing HTML templates just got easy, now what?
 
-The generated templates can be hosted on Mailchimp(/Mandrill) or some other service. Mandrill in particular provides a REST API for targeting a hosted template and injecting the content/variables into the same. And sending the mail right away. 🎉
+The generated templates can be hosted on Mailchimp(/Mandrill) or some other service. Mandrill in particular provides a REST API for targeting a hosted template and injecting the content/variables into the same. And send the mail right away. 🎉
 
 ### References
 
