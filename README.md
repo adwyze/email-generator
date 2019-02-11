@@ -15,6 +15,8 @@ For creating a new template, say `Invitation.html`, just add a HTML page named `
     yarn start
 ```
 
+The setup uses `browser-sync`, making it easy to test the templates on different devices connected to the same network.
+
 For generating the production-ready templates, run
 
 ```
