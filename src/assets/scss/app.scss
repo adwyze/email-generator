@@ -1,0 +1,605 @@
+@import "foundation-emails";
+
+//  Foundation for Emails Settings
+//  ------------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Grid
+//   3. Block Grid
+//   4. Typography
+//   5. Button
+//   6. Callout
+//   7. Menu
+//   8. Thumbnail
+
+// 1. Global
+// ---------
+
+$primary-color: #5ab190;
+$secondary-color: #777777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #f3f3f3;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #ffffff;
+
+$olive: #22a99c;
+$olive-lt: #dff6ed;
+$knight: #414a6b;
+$currant: #6c5999;
+$currant-lt: #e3edef;
+$sunshine: #ffc100;
+$sunshine-lt: #fef6d2;
+$wood: #846400;
+$sea: #0082ff;
+
+$link-text: #0a0a0a;
+
+$global-width: 580px;
+$global-width-small: 95%;
+$global-gutter: 16px;
+$body-background: $light-gray;
+$container-background: $white;
+$global-padding: 16px;
+$global-margin: 16px;
+$global-radius: 3px;
+$global-rounded: 500px;
+$global-breakpoint: $global-width + $global-gutter;
+
+// 2. Grid
+// -------
+
+$grid-column-count: 12;
+$column-padding-bottom: $global-padding;
+$container-radius: 0;
+
+// 3. Block Grid
+// -------------
+
+$block-grid-max: 8;
+$block-grid-gutter: $global-gutter;
+
+// 4. Typography
+// -------------
+
+$global-font-color: $black;
+$body-font-family: Helvetica, Arial, sans-serif;
+$global-font-weight: normal;
+$header-color: inherit;
+$global-line-height: 1.3;
+$global-font-size: 16px;
+$body-line-height: $global-line-height;
+$header-font-family: $body-font-family;
+$header-font-weight: $global-font-weight;
+$h1-font-size: 34px;
+$h2-font-size: 30px;
+$h3-font-size: 28px;
+$h4-font-size: 24px;
+$h5-font-size: 20px;
+$h6-font-size: 18px;
+$header-margin-bottom: 0px;
+$paragraph-margin-bottom: 10px;
+$small-font-size: 80%;
+$small-font-color: $medium-gray;
+$lead-font-size: $global-font-size * 1.25;
+$lead-line-height: 1.6;
+$text-padding: 10px;
+$subheader-lineheight: 1.4;
+$subheader-color: $dark-gray;
+$subheader-font-weight: $global-font-weight;
+$subheader-margin-top: 4px;
+$subheader-margin-bottom: 8px;
+$hr-width: $global-width;
+$hr-border: 1px solid $black;
+$hr-margin: 20px auto;
+$anchor-text-decoration: none;
+$anchor-color: $primary-color;
+$anchor-color-visited: $anchor-color;
+$anchor-color-hover: darken($primary-color, 10%);
+$anchor-color-active: $anchor-color-hover;
+$stat-font-size: 40px;
+
+// 5. Button
+// ---------
+
+$button-padding: (
+  tiny: 4px 8px 4px 8px,
+  small: 5px 10px 5px 10px,
+  default: 8px 16px 8px 16px,
+  large: 15px 25px 15px 25px
+);
+$button-font-size: (
+  tiny: 10px,
+  small: 12px,
+  default: 16px,
+  large: 16px
+);
+$button-color: $white;
+$button-color-alt: $medium-gray;
+$button-font-weight: bold;
+$button-margin: 0 0 $global-margin 0;
+$button-background: red;
+$button-border: 2px solid $button-background;
+$button-radius: $global-radius;
+$button-rounded: $global-rounded;
+
+// 6. Callout
+// ----------
+
+$callout-background: $white;
+$callout-background-fade: 85%;
+$callout-padding: 10px;
+$callout-margin-bottom: $global-margin;
+$callout-border: 1px solid darken($callout-background, 20%);
+$callout-border-secondary: 1px solid darken($secondary-color, 20%);
+$callout-border-success: 1px solid darken($success-color, 20%);
+$callout-border-warning: 1px solid darken($warning-color, 20%);
+$callout-border-alert: 1px solid darken($alert-color, 20%);
+
+// 7. Menu
+// -------
+
+$menu-item-padding: 10px;
+$menu-item-gutter: 10px;
+$menu-item-color: $primary-color;
+
+// 8. Thumbnail
+// ------------
+
+$thumbnail-border: solid 4px $white;
+$thumbnail-margin-bottom: $global-margin;
+$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
+$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+$thumbnail-transition: box-shadow 200ms ease-out;
+$thumbnail-radius: $global-radius;
+
+$secondary-color: #777777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #f3f3f3;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #ffffff;
+$pre-color: #ff6908;
+
+$olive: #22a99c;
+$olive-lt: #dff6ed;
+$currant: #6c5999;
+$currant-lt: #f1eceb;
+$sunshine: #ffc100;
+$sunshine-lt: #fef6d2;
+$wood: #846400;
+$sea: #0082ff;
+
+$global-width: 580px;
+$global-width-small: 95%;
+$global-gutter: 16px;
+$body-background: $light-gray;
+$container-background: $white;
+$global-padding: 16px;
+$global-margin: 16px;
+$global-radius: 3px;
+$global-rounded: 500px;
+$global-breakpoint: $global-width + $global-gutter;
+
+// 2. Grid
+// -------
+
+$grid-column-count: 12;
+$column-padding-bottom: $global-padding;
+$container-radius: 0;
+
+// 3. Block Grid
+// -------------
+
+$block-grid-max: 8;
+$block-grid-gutter: $global-gutter;
+
+// 4. Typography
+// -------------
+
+$global-font-color: $black;
+$body-font-family: Helvetica, Arial, sans-serif;
+$global-font-weight: normal;
+$header-color: $black;
+$global-line-height: 1.3;
+$global-font-size: 16px;
+$body-line-height: $global-line-height;
+$header-font-family: $body-font-family;
+$header-font-weight: $global-font-weight;
+$h1-font-size: 34px;
+$h2-font-size: 30px;
+$h3-font-size: 28px;
+$h4-font-size: 24px;
+$h5-font-size: 20px;
+$h6-font-size: 18px;
+$header-margin-bottom: 0px;
+$paragraph-margin-bottom: 10px;
+$small-font-size: 100%;
+$small-font-color: $medium-gray;
+$lead-font-size: $global-font-size * 1.25;
+$lead-line-height: 1.6;
+$text-padding: 10px;
+$subheader-lineheight: 1.4;
+$subheader-color: $dark-gray;
+$subheader-font-weight: $global-font-weight;
+$subheader-margin-top: 4px;
+$subheader-margin-bottom: 8px;
+$hr-width: $global-width;
+$hr-border: 1px solid $black;
+$hr-margin: 20px auto;
+$anchor-text-decoration: none;
+$anchor-color: $primary-color;
+$anchor-color-visited: $anchor-color;
+$anchor-color-hover: darken($primary-color, 10%);
+$anchor-color-active: $anchor-color-hover;
+$stat-font-size: 40px;
+
+// 5. Button
+// ---------
+
+$button-padding: (
+  tiny: 4px 8px 4px 8px,
+  small: 5px 10px 5px 10px,
+  default: 8px 16px 8px 16px,
+  large: 15px 25px 15px 25px
+);
+$button-font-size: (
+  tiny: 10px,
+  small: 12px,
+  default: 16px,
+  large: 16px
+);
+$button-color: $white;
+$button-color-alt: $medium-gray;
+$button-font-weight: bold;
+$button-margin: 0 0 $global-margin 0;
+$button-background: #22a99c;
+$button-border: 2px solid $primary-color;
+$button-radius: $global-radius;
+$button-rounded: $global-rounded;
+
+// 6. Callout
+// ----------
+
+$callout-background: $white;
+$callout-background-fade: 85%;
+$callout-padding: 10px;
+$callout-margin-bottom: $global-margin;
+$callout-border: 1px solid darken($callout-background, 20%);
+$callout-border-secondary: 1px solid darken($secondary-color, 20%);
+$callout-border-success: 1px solid darken($success-color, 20%);
+$callout-border-warning: 1px solid darken($warning-color, 20%);
+$callout-border-alert: 1px solid darken($alert-color, 20%);
+
+// 7. Menu
+// -------
+
+$menu-item-padding: 10px;
+$menu-item-gutter: 10px;
+$menu-item-color: $primary-color;
+
+// 8. Thumbnail
+// ------------
+
+$thumbnail-border: solid 4px $white;
+$thumbnail-margin-bottom: $global-margin;
+$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
+$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+$thumbnail-transition: box-shadow 200ms ease-out;
+$thumbnail-radius: $global-radius;
+
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+html {
+  background: $white;
+}
+
+.body {
+  padding-top: 20px;
+  background: url("https://clarisights.com/assets/Mesh.png");
+  background-repeat: repeat-x !important;
+}
+
+table.container {
+  background: transparent;
+}
+
+.no-bullets {
+  list-style-type: none;
+  > li {
+    list-style: none;
+  }
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.padding-20 {
+  padding: 20px;
+}
+
+.padding-40 {
+  padding: 40px;
+}
+
+.fade {
+  opacity: 0.5;
+}
+
+table.button.cta table td {
+  background: $olive !important;
+  color: $white;
+  border-radius: $global-radius;
+
+  a {
+    background: $olive !important;
+    font-weight: lighter !important;
+  }
+}
+
+table.button.cta.small table td {
+  background: $olive !important;
+  color: $white;
+  border-radius: $global-radius;
+  padding: 2px;
+  font-size: 14px !important;
+  a {
+    background: $olive !important;
+    font-weight: lighter !important;
+  }
+}
+
+.link {
+  color: $knight !important;
+  text-decoration: underline;
+  &:hover {
+    color: $olive !important;
+  }
+}
+
+.img-link {
+  display: inline-block;
+
+  img {
+    user-select: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+  }
+}
+
+.heading {
+  display: block;
+  font-size: 26px;
+  font-weight: bolder;
+  color: $primary-color;
+}
+
+.bordered {
+  border: 1px solid $primary-color;
+}
+
+.cover {
+  width: 100%;
+  height: 245px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.thread-border {
+  display: block;
+  border: 1px solid $sunshine;
+  border-radius: $global-radius;
+  margin: 0 15px;
+  background: $white;
+}
+
+.comment-information {
+  .dot {
+    background: $wood;
+    display: inline-block;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    margin: 0 0 5px 0;
+  }
+
+  .timestamp {
+    color: $wood;
+    font-size: 12px;
+  }
+}
+
+.comment-body {
+  background: $white;
+}
+
+.thread-header .columns {
+  padding-bottom: 0;
+}
+
+.report-tag {
+  background: $sunshine-lt;
+  color: $wood;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 0;
+  border-radius: $global-radius $global-radius 0 0;
+}
+
+.credentials {
+  margin: 0 auto;
+
+  .title {
+    color: $wood;
+  }
+}
+
+.quote {
+  font-size: 20px;
+  text-align: center;
+}
+
+.main-content-wrapper {
+  // background: $sunshine-lt;
+}
+
+// Full Width Headers
+.header {
+  margin: 40px auto;
+  width: 100%;
+  background: transparent;
+}
+
+.container.footer {
+}
+
+.wrapper.secondary {
+  background: #f3f3f3;
+}
+
+.header-logo {
+  width: 40%;
+  height: auto;
+  margin: 30px auto;
+}
+
+.footer-link-img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.footer-link {
+  font-size: 12px;
+  text-decoration: underline;
+  margin: 5px 10px;
+  color: $sea;
+}
+
+.footer {
+  .menu-item {
+    padding: 0 !important;
+  }
+}
+
+// .body-wrapper {
+//   background: $white;
+//   border-radius: $global-radius !important;
+//   background-size: cover !important;
+//   width: 100vw;
+//   overflow: hidden;
+// }
+
+// .main-content {
+//   padding: 20px;
+//   text-align: center;
+// }
+
+// .greeting {
+//   color: $olive;
+// }
+
+// .content {
+//   padding: 0 50px;
+//   text-align: justify;
+//   hyphens: none;
+// }
+
+// .list-content {
+//   padding: 0 50px 0 70px;
+//   text-align: justify;
+//   hyphens: none;
+// }
+
+// .content-center {
+//   padding: 0 50px;
+//   text-align: center;
+// }
+
+// .mail-link {
+//   color: $sea;
+//   text-decoration: underline;
+// }
+
+// table.button:hover table td {
+//   background: $olive !important;
+// }
+
+// .profile-tag {
+//   color: $sea;
+//   display: inline-block;
+// }
+
+// .underline {
+//   text-decoration: underline;
+// }
+
+// .bold {
+//   font-weight: bold;
+// }
+
+// .padding-tb {
+//   padding: 20px 0;
+// }
+
+// @media only screen and (max-width: 596px) {
+//   $global-width: 200px;
+
+//   .header-logo {
+//     width: 150px !important;
+//     height: auto;
+//     margin: 0 auto;
+//     margin-bottom: 6px;
+//   }
+
+//   .content {
+//     padding: 0 5px !important;
+//   }
+
+//   .list-content {
+//     padding: 0 5px 0 15px !important;
+//   }
+
+//   .credentails {
+//     padding: 0;
+//   }
+
+//   .comment-information {
+//     padding: 20px 20px 0 20px;
+//   }
+
+//   .comment-body {
+//     padding: 0 20px 0 20px;
+//   }
+
+//   .footer-link-img {
+//     width: 40px !important;
+//     margin: 10px !important;
+//   }
+
+//   .footer-link {
+//     font-size: 10px;
+//   }
+
+//   .padding-tb {
+//     padding: 10px 0;
+//   }
+
+//   table.body .container.footer {
+//     width: 100% !important;
+//   }
+// }
