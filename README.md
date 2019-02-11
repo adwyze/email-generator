@@ -4,7 +4,7 @@
 
 This repository contains the generator for HTML templates. The generator uses Inky(by Foundation) for templating language that converts simple HTML tags into the complex table HTML required for emails.
 
-All the components(Buttons, Greetings, etc) required are written in the [index.html](./src/pages/index.html)
+A few basic components(Buttons, Greetings, etc) required are already written in the [index.html](./src/pages/index.html)
 
 For creating a new template, say `Invitation.html`, just add a HTML page at `./src/pages/` and on running the build, the template will be generated at `./dist/`
 
