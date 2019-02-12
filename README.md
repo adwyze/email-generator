@@ -9,6 +9,7 @@ A few basic components(Buttons, Greetings, etc) required are already written in 
 For creating a new template, say `Invitation.html`, just add a HTML page named `Invitation.html` at `./src/pages/` and on running the build, the template will be generated at `./dist/Invitation.html`
 
 ### Setup
+The setup needs `gulp` to be globally installed.
 
 ```
     yarn install
@@ -30,4 +31,4 @@ The generated templates can be hosted on Mailchimp(/Mandrill) or some other serv
 ### References
 
 - [Foundation - Inky](https://foundation.zurb.com/emails/docs/inky.html)
-- [Manrill](http://mandrillapp.com/api/docs/templates.ruby.html)
+- [Mandrill](http://mandrillapp.com/api/docs/templates.ruby.html)
