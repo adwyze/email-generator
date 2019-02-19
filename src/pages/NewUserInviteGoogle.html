@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"  content="width=device-width, initial-scale=1" />
+</head>
+
+<body class="body">
+<center>
+    <spacer size="30"></spacer>
+    <container class="header">
+        <row>
+            <center>
+              <img
+                class="header-logo"
+                src="https://clarisights.com/assets/img/Logo-email-header@3x.png"
+                alt="Clarisights"
+              />
+            </center>
+          </row>
+    </container>
+    <container>
+        <spacer size="30"></spacer>
+        <container class="body-wrapper radius">
+            <spacer size="40"></spacer>
+            <row>
+                <columns>
+                    <h3 class="text-center greeting">Hello *|USERNEWNAME|*!</h3>
+                </columns>
+            </row>
+            <row>
+                <columns>
+                    <wrapper class="main-content">
+                        <p class="content">
+                            You've been invited to join the
+                            <span class="underline">*|COMPANY|*</span> workspace on
+                            *|COMPANYNAME|*- the hub of all your marketing KPIs. You can
+                            use Clarisights to see the dashboards shared with you and
+                            easily create your own, to deep-dive and explore insights from
+                            marketing data.
+                            <br />
+                        </p>
+                        <p class="content">
+                            The Clarisights team has created a handbook to help you understand the capabilities of the platform, the data sources available and the way Delivery Hero's data has been structured.
+                        </p>
+                        <spacer size="20"></spacer>
+                        <center>
+                            <button href="https://docs.google.com/document/d/e/2PACX-1vSeIoaTKIEbf6fwc6yi2RO4NIow1CgAt_cYDhiBOEQFQDtGvp0RyY74BMKp2NPABaGLw7EwIBrc6kFa/pub" class="secondary-cta large radius" target='blank'>Go to Handbook</button>
+                        </center>
+                        <spacer size="20"></spacer>
+                        <p class="content">
+                            Please sign-in to Clarisights using your Google account linked with <span class="bold">*|EMAIL|*</span>.
+                        </p>
+                        <spacer size="20"></spacer>
+                        <center>
+                            <button href=<%= @user_login_url %> class="main-cta large radius" target='blank'>
+                                Sign-in
+                            </button>
+                        </center>
+                        <spacer size="20"></spacer>
+                        <p class="content">
+                            Feel free to reach out to us for any query via 
+                            <a href="https://help.clarisights.com/getting-started-with-clarisights/reaching-the-clarisights-support-team" target="_blank">the in-platform messenger</a>.
+                        </p>
+                    </wrapper>
+                </columns>
+                <spacer size="25"></spacer>
+            </row>
+            <spacer size="40"></spacer>
+            <row>
+                <columns>
+                  <p class="content">
+                    -Team *|COMPANYNAME|*
+                  </p>
+                </columns>
+              </row>
+        </container>
+    </container>
+</center>
+</body>
+</html>
