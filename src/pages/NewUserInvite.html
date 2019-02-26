@@ -40,6 +40,18 @@
                   and easily share them with your team.
                   <br />
                 </p>
+                *|IF:GOOGLESIGNINENFORCE|*
+                <p class="content">
+                  Please sign-in to Clarisights using your Google account linked
+                  with <span class="bold">*|EMAIL|*</span>.
+                </p>
+                <spacer size="20"></spacer>
+                <center>
+                <button href=<%= @user_login_url %> class="main-cta large radius" target='blank'>
+                      Sign-in
+                </button>
+                </center>
+                *|ELSE:|*
                 <p class="content">
                   To get started, click on the
                   <span class="bold">Set Password</span> button below to set
@@ -55,6 +67,7 @@
                     Set Password
                   </button>
                 </center>
+                *|END:IF|*
                 <spacer size="20"></spacer>
               </wrapper>
             </columns>
