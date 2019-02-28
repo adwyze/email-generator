@@ -304,6 +304,7 @@ html {
 }
 
 .body {
+  background-color: #f7f6f2 !important;
   padding-top: 20px;
   background: url("https://clarisights.com/assets/Mesh.png");
   background-repeat: repeat-x !important;
@@ -496,13 +497,14 @@ table.button.cta.small table td {
   }
 }
 
-// .body-wrapper {
-//   background: $white;
-//   border-radius: $global-radius !important;
-//   background-size: cover !important;
-//   width: 100vw;
-//   overflow: hidden;
-// }
+.body-wrapper {
+  background: $white !important;
+  border-radius: $global-radius !important;
+  background-size: cover !important;
+  width: 100vw;
+  overflow: hidden;
+  padding: 50px;
+}
 
 // .main-content {
 //   padding: 20px;
