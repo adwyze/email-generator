@@ -4,7 +4,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-
   <body class="body">
     <center>
       <spacer size="30"></spacer>
@@ -28,18 +27,19 @@
               <h3 class="text-center greeting">Hello *|USERNEWNAME|*!</h3>
             </columns>
           </row>
+          <spacer size="20"></spacer>
           <row>
             <columns>
               <wrapper class="main-content">
-                <p class="content">
+                <p class="content text-center">
                   Welcome to the workspace on *|COMPANYNAME|* - the hub of all
                   your marketing KPIs. With *|COMPANYNAME|*, you can easily
                   answer questions on marketing data across multiple sources
                   like advertising channels, analytics sources, and internal
                   attribution/CRM data. Create your own reports in a few clicks,
                   and easily share them with your team.
-                  <br />
                 </p>
+                <spacer size="20"> </spacer>
                 *|IF:GOOGLESIGNINENFORCE|*
                 <p class="content">
                   Please sign-in to Clarisights using your Google account linked
@@ -73,15 +73,16 @@
                 </center>
                 *|END:IF|*
                 <spacer size="20"></spacer>
+                <p class="content">
+                  For any questions, please feel free to reach us at
+                  <a class="mail-link" href="mailto:support@*|DOMAINNAME|*"
+                    >support@*|DOMAINNAME|*</a
+                  >.
+                </p>
               </wrapper>
             </columns>
-            <spacer size="25"></spacer>
-            For any questions, please feel free to reach us at
-            <a class="mail-link" href="mailto:support@*|DOMAINNAME|*"
-              >support@*|DOMAINNAME|*</a
-            >.
-            <spacer size="40"></spacer>
           </row>
+          <spacer size="40"></spacer>
           <row>
             <columns>
               <p class="content">
@@ -89,6 +90,68 @@
               </p>
             </columns>
           </row>
+        </container>
+        <container class="footer">
+          <row class="collapsed">
+            <columns>
+              <spacer size="16"></spacer>
+              <center>
+                <menu>
+                  <item>
+                    <a href="*|COMPANYMEDIUM|*" target="_blank">
+                      <img class="footer-link-img float-center"
+                      src=*|COMPANYWEBSITEURL|*/assets/img/medium-icon.png>
+                    </a>
+                  </item>
+                  <item>
+                    <a href="*|COMPANYLINKEDIN|*" target="_blank">
+                      <img class="footer-link-img float-center"
+                      src=*|COMPANYWEBSITEURL|*/assets/img/linkedin-icon.png>
+                    </a>
+                  </item>
+                  <item>
+                    <a href="*|COMPANYTWITTER|*" target="_blank">
+                      <img class="footer-link-img float-center"
+                      src=*|COMPANYWEBSITEURL|*/assets/img/twitter-icon.png>
+                    </a>
+                  </item>
+                </menu>
+              </center>
+            </columns>
+          </row>
+          <row class="collapsed">
+            <columns>
+              <center>
+                <menu>
+                  <item
+                    ><a
+                      class="footer-link"
+                      href="*|COMPANYWEBSITEURL|*"
+                      target="_blank"
+                      >*|COMPANYWEBSITEURL|*</a
+                    ></item
+                  >
+                  <item
+                    ><a
+                      class="footer-link"
+                      href="*|COMPANYHELPDOC|*"
+                      target="_blank"
+                      >Help Center</a
+                    ></item
+                  >
+                  <item
+                    ><a
+                      class="footer-link"
+                      href="*|COMPANYPRIVACYPOLICY|*"
+                      target="_blank"
+                      >Privacy Policy</a
+                    ></item
+                  >
+                </menu>
+              </center>
+            </columns>
+          </row>
+          <spacer size="16"></spacer>
         </container>
       </container>
     </center>
