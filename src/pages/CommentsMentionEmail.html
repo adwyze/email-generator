@@ -37,48 +37,35 @@
                   workspace.
                 </p>
               </wrapper>
+            {{#each comment_threads}}
             <container class="thread-container">
               <row class="thread-header">
                 <columns>
-                  <p class="report-tag">FB Engagaement Report / Widget Table</p>
+                  <p class="report-tag">{{this.report_name}} / {{#if this.widget_name}} / {{this.widget_name}} {{/if}}</p>
                 </columns>
               </row>
               <span class="thread-border">
                 <spacer size="20"></spacer>
+                {{#each this.comments}}
                 <row class="thread-content radius">
                   <columns>
                     <span>
                       <p class="comment-information">
-                        <span class="underline">Jimmy</span>
+                        <span class="underline">{{this.user_name}}</span>
                         <span class="dot"></span>
-                        <span class="timestamp">Yesterday at 12:12 pm</span>
+                        <span class="timestamp">{{this.timestamp_formatted}}</span>
                       </p>
                     </span>
                     <p class="comment-body">
-                      <span class="profile-tag">@Tim</span>, check this report out. 
-                      We are losing engagement. Can’t go like this.
+                      {{this.body}}
                     </p>
                   </columns>
                 </row>
-                <row class="thread-content radius">
-                  <columns>
-                    <span>
-                      <p class="comment-information">
-                        <span class="underline">Jessy</span>
-                        <span class="dot"></span>
-                        <span class="timestamp">Today at 1:12 am</span>
-                      </p>
-                    </span>
-                    <p class="comment-body">
-                      Hey,
-                      <span class="profile-tag">@Tim</span>, Congratulations!
-                    </p>
-                  </columns>
-                </row>
+                {{/each}}
               </span>
               <row>
                 <columns>
-                  <button href="#" class="cta cta-sm small radius">
+                  <button href={{this.thread_deeplink}} class="cta cta-sm small radius">
                     Open this report
                   </button>
                 </columns>
@@ -92,6 +79,7 @@
                 </columns>
               </row>
             </container>
+            {{/each}}
           </row>
         </container>
         <container class="footer">
