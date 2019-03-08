@@ -1,42 +1,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body class="body">
-    <center>
-      <spacer size="30"></spacer>
-      <container class="header">
-        <row>
-          <center>
-            <img
-              class="header-logo"
-              src="https://clarisights.com/assets/img/Logo-email-header@3x.png"
-              alt="Clarisights"
-            />
-          </center>
-        </row>
-      </container>
-      <container>
-        <spacer size="30"></spacer>
-        <container class="body-wrapper radius">
-          <spacer size="40"></spacer>
-          <row>
-            <columns>
-              <h3 class="text-center greeting">Hello!</h3>
-            </columns>
-          </row>
-          <spacer size="30"></spacer>
 
-          <row>
-            <columns>
-              <wrapper class="main-content">
-                <p class="content">
-                  You've been mentioned in a thread on the *|COMPANY|*
-                  workspace.
-                </p>
-              </wrapper>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body class="body">
+  <center>
+    <spacer size="30"></spacer>
+    <container class="header">
+      <row>
+        <center>
+          <img class="header-logo" src="https://clarisights.com/assets/img/Logo-email-header@3x.png" alt="Clarisights" />
+        </center>
+      </row>
+    </container>
+    <container>
+      <spacer size="30"></spacer>
+      <container class="body-wrapper radius">
+        <spacer size="40"></spacer>
+        <row>
+          <columns>
+            <h3 class="text-center heading">Hello {{USERNAME}}!</h3>
+          </columns>
+        </row>
+        <spacer size="30"></spacer>
+
+        <row>
+          <columns>
+            <wrapper class="main-content">
+              <p class="content">
+                You've been mentioned in a thread on the {{COMPANY}}
+                workspace.
+              </p>
+            </wrapper>
             {{#each comment_threads}}
             <container class="thread-container">
               <row class="thread-header">
@@ -74,77 +72,45 @@
               <row>
                 <columns>
                   <p class="content">
-                    -Team *|COMPANYNAME|*
+                    -Team {{COMPANYNAME}}
                   </p>
                 </columns>
               </row>
             </container>
             {{/each}}
-          </row>
-        </container>
-        <container class="footer">
-          <row class="collapsed">
-            <columns>
-              <spacer size="16"></spacer>
-              <center>
-                <menu>
-                  <item>
-                    <a href="*|COMPANYMEDIUM|*" target="_blank">
-                      <img class="footer-link-img float-center"
-                      src=*|COMPANYWEBSITEURL|*/assets/img/medium-icon.png>
-                    </a>
-                  </item>
-                  <item>
-                    <a href="*|COMPANYLINKEDIN|*" target="_blank">
-                      <img class="footer-link-img float-center"
-                      src=*|COMPANYWEBSITEURL|*/assets/img/linkedin-icon.png>
-                    </a>
-                  </item>
-                  <item>
-                    <a href="*|COMPANYTWITTER|*" target="_blank">
-                      <img class="footer-link-img float-center"
-                      src=*|COMPANYWEBSITEURL|*/assets/img/twitter-icon.png>
-                    </a>
-                  </item>
-                </menu>
-              </center>
-            </columns>
-          </row>
-          <row class="collapsed">
-            <columns>
-              <center>
-                <menu>
-                  <item
-                    ><a
-                      class="footer-link"
-                      href="*|COMPANYWEBSITEURL|*"
-                      target="_blank"
-                      >*|COMPANYWEBSITEURL|*</a
-                    ></item
-                  >
-                  <item
-                    ><a
-                      class="footer-link"
-                      href="*|COMPANYHELPDOC|*"
-                      target="_blank"
-                      >Help Center</a
-                    ></item
-                  >
-                  <item
-                    ><a
-                      class="footer-link"
-                      href="*|COMPANYPRIVACYPOLICY|*"
-                      target="_blank"
-                      >Privacy Policy</a
-                    ></item
-                  >
-                </menu>
-              </center>
-            </columns>
-          </row>
-          <spacer size="16"></spacer>
-        </container>
+        </row>
       </container>
-    </center>
-  </body>
+      <container class="footer">
+        <row class="collapsed">
+          <columns>
+            <spacer size="16"></spacer>
+            <center>
+              <menu>
+                <item>
+                  <a href="{{COMPANYMEDIUM}}" target="_blank">
+                    <img class="footer-link-img float-center" src={{COMPANYWEBSITEURL}}/assets/img/medium-icon.png> </a>
+                      </item> <item>
+                    <a href="{{COMPANYLINKEDIN}}" target="_blank">
+                      <img class="footer-link-img float-center" src={{COMPANYWEBSITEURL}}/assets/img/linkedin-icon.png>
+                        </a> </item> <item>
+                      <a href="{{COMPANYTWITTER}}" target="_blank">
+                        <img class="footer-link-img float-center" src={{COMPANYWEBSITEURL}}/assets/img/twitter-icon.png>
+                          </a> </item> </menu> </center> </columns> </row> <row class="collapsed">
+                        <columns>
+                          <center>
+                            <menu>
+                              <item><a class="footer-link" href="{{COMPANYWEBSITEURL}}" target="_blank">{{COMPANYWEBSITEURL}}</a></item>
+                              <item><a class="footer-link" href="{{COMPANYHELPDOC}}" target="_blank">Help Center</a></item>
+                              <item><a class="footer-link" href="{{COMPANYPRIVACYPOLICY}}" target="_blank">Privacy
+                                  Policy</a></item>
+                            </menu>
+                          </center>
+                        </columns>
+        </row>
+        <spacer size="16"></spacer>
+      </container>
+    </container>
+  </center>
+</body>
+
 </html>
