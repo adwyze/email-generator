@@ -44,6 +44,7 @@
               </row>
               <span class="thread-border">
                 <spacer size="20"></spacer>
+                {{#if this.comments}}
                 {{#each this.comments}}
                 <row class="thread-content radius">
                   <columns>
@@ -60,6 +61,17 @@
                   </columns>
                 </row>
                 {{/each}}
+                {{else}}
+                <row class="thread-content radius">
+                  <columns>
+                    <span>
+                      <p>
+                        {{{this.body}}}
+                      </p>
+                    </span>
+                  </columns>
+                </row>
+                {{/if}}
               </span>
               <spacer size="5"></spacer>
               <row>
