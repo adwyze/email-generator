@@ -4,17 +4,16 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
 </head>
 
 <body class="body">
     <center>
         <spacer size="30"></spacer>
         <container class="header">
-            <row class="collapse">
-                <columns>
+            <row>
+                <center>
                     <img class="header-logo" src="https://clarisights.com/assets/img/Logo-email-header@3x.png" alt="Clarisights" />
-                </columns>
+                </center>
             </row>
         </container>
         <container>
@@ -26,6 +25,7 @@
                         <h3 class="text-center heading">Hello *|REPORTOWNERNAME|*!</h3>
                     </columns>
                 </row>
+                <spacer size="20"></spacer>
                 <row>
                     <columns>
                         <wrapper class="main-content">
@@ -37,22 +37,24 @@
                                 *|REPORTCOMPANYNAME|*
                                 *|COMPANYNAME|* workspace.
                             </p>
-                            <spacer size="20"></spacer>
-                            <center>
-                                <button href="*|ACCESSGRANTLINK|*" class="cta large radius" target="blank"> Grant
-                                    Access
-                                </button>
-                            </center>
-                            <spacer size="20"></spacer>
+                            <spacer size="20">
+                                <center>
+                                    <button href="*|ACCESSGRANTLINK|*" class="cta large radius" target="blank">
+                                        Grant
+                                        Access
+                                    </button>
+                                </center>
+                            </spacer>
                         </wrapper>
                     </columns>
-                    <spacer size="25"></spacer>
+                </row>
+                <spacer size="40"></spacer>
+                <row>
                     <columns>
                         <p class="content">
                             -Team *|COMPANYNAME|*
                         </p>
                     </columns>
-                    <spacer size="40"></spacer>
                 </row>
             </container>
             <container class="footer">
