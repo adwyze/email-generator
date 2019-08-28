@@ -32,3 +32,21 @@ The generated templates can be hosted on Mailchimp(/Mandrill) or some other serv
 
 - [Foundation - Inky](https://foundation.zurb.com/emails/docs/inky.html)
 - [Mandrill](http://mandrillapp.com/api/docs/templates.ruby.html)
+
+## Publish updated template to Mailchimp
+
+#### install pipenv
+- run `pip install pipenv`
+
+
+#### install dependencies
+- run `cd email-generator`
+- run `pipenv sync`
+
+
+#### activate the virtual environment
+- run `pipenv shell`
+
+
+#### publish the new built templates
+- run `python mandrill_operations.py --key your-mandrill-key --operation update --email acb.xyz@fff.com --template_name anomaly-alert --file_name anomalyAlert.html`
