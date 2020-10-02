@@ -55,6 +55,20 @@
                     Sign-in
                   </button>
                 </center>
+                *|ELSEIF:EXISTINGUSER|*
+                <p class="content">
+                  Please sign-in to Clarisights using your exisiting account.
+                </p>
+                <spacer size="20"></spacer>
+                <center>
+                  <button
+                    href="*|USERLOGINURL|*"
+                    class="cta large radius"
+                    target="blank"
+                  >
+                    Sign-in
+                  </button>
+                </center>
                 *|ELSE:|*
                 <p class="content">
                   To get started, click on the
