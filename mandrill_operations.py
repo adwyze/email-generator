@@ -11,15 +11,7 @@ class MandrillOperations(object):
         self.mandrill_client = mandrill.Mandrill(mandrill_key)
         self.dist_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'dist'))
 
-    def update_template(self,
-                        name: str,
-                        from_email: str,
-                        from_name: str = '',
-                        labels: list = [],
-                        subject: str = 'template update',
-                        text: str = '',
-                        publish: bool = True,
-                        template_file_name='anomalyAlert.html'):
+    def update_template(self, name, from_email, from_name = '', labels = [], subject = 'template update', text = '', publish = True, template_file_name='anomalyAlert.html'):
         """
             {'code': '<div mc:edit="editable">editable content</div>',
              'created_at': '2013-01-01 15:30:27',

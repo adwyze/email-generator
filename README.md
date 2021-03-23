@@ -21,7 +21,7 @@ The setup uses `browser-sync`, making it easy to test the templates on different
 For generating the production-ready templates, run
 
 ```
-    yarn build
+    gulp build
 ```
 
 ### Writing HTML templates just got easy, now what?
